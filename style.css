@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: antiquewhite;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.content_mem {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.content_mem::before {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('assets/img/icons/plus.png');
+    background-size: contain;
+}
+
+.content_img {
+    display: none;
+}
+
+.content_input {
+    cursor: pointer;
+    appearance: none;
+}
+
+.content_input:checked~.content_img {
+    display: block;
+}
+
+.content_input:checked~.content_mem:before {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('assets/img/icons/close.png');
+    background-size: contain;
+}
