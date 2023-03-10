@@ -1,8 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     background-color: antiquewhite;
+    font-weight: 700;
+
 }
 
 *,
@@ -15,16 +17,27 @@ p {
     margin: 0 0 5px;
 }
 
+.title {
+    margin-bottom: 1px solid;
+}
+
 img {
     display: block;
     width: 40%;
     margin: 0 auto;
 }
 
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .content_mem {
+    border-bottom: 1px solid gray;
     display: block;
     position: relative;
     cursor: pointer;
+    color: blue;
 }
 
 .content_mem::before {
@@ -50,6 +63,10 @@ img {
 
 .content_input:checked~.content_img {
     display: block;
+}
+
+.content_input:checked~.content_mem {
+    color: black;
 }
 
 .content_input:checked~.content_mem:before {
