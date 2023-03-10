@@ -18,22 +18,27 @@ p {
 }
 
 .title {
-    margin-bottom: 1px solid;
+    font-size: 40px;
+    margin: 20px 0 0 0;
 }
 
 img {
+    margin-top: 10px;
     display: block;
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
 }
 
 .container {
     max-width: 1920px;
     margin: 0 auto;
+    padding: 0 400px 0 400px;
 }
 
 .content_mem {
-    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(180, 180, 180, .3);
     display: block;
     position: relative;
     cursor: pointer;
@@ -46,13 +51,14 @@ img {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     background-image: url('assets/img/icons/plus.png');
     background-size: contain;
 }
 
 .content_img {
+
     display: none;
 }
 
@@ -75,8 +81,8 @@ img {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     background-image: url('assets/img/icons/close.png');
     background-size: contain;
 }
