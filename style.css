@@ -27,6 +27,7 @@ img {
     display: block;
     width: 45%;
     margin: 0 auto;
+    transition: all 5.4s;
 }
 
 .container {
@@ -59,7 +60,11 @@ img {
 
 .content_img {
 
-    display: none;
+    width: 0;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: 1s all;
 }
 
 .content_input {
@@ -68,7 +73,11 @@ img {
 }
 
 .content_input:checked~.content_img {
-    display: block;
+    width: auto;
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s all;
 }
 
 .content_input:checked~.content_mem {
