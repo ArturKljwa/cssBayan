@@ -1,10 +1,13 @@
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+
     line-height: 1.5;
     background-color: antiquewhite;
     font-weight: 700;
-
 }
 
 *,
@@ -13,26 +16,23 @@ body {
     box-sizing: border-box;
 }
 
-p {
-    margin: 0 0 5px;
-}
 
 .title {
-    font-size: 40px;
-    margin: 20px 0 0 0;
+    font-size: 4rem;
+    margin: 2rem 0 0 0;
 }
 
 img {
-    margin-top: 10px;
+    margin-top: 1rem;
     display: block;
     width: 45%;
     margin: 0 auto;
-    transition: all 5.4s;
+    transition: all .4s;
 }
 
 .wrapper {
     max-width: 1920px;
-    padding: 0 300px;
+    padding: 0 30rem;
 }
 
 .container {
@@ -42,14 +42,28 @@ img {
 
 }
 
+/* .mem_plus {
+    margin-left: 600px;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    background-image: url('assets/img/icons/plus.png');
+    background-size: contain;
+} */
+
 .content_mem {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(180, 180, 180, .3);
+
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid rgba(180, 180, 180, .3);
     display: block;
     position: relative;
     cursor: pointer;
     color: blue;
+    font-size: 2rem;
 }
 
 /* .content_mem::before {
@@ -65,7 +79,7 @@ img {
 } */
 
 .content_img {
-
+    display: block;
     width: 0;
     visibility: hidden;
     height: 0;
@@ -111,26 +125,28 @@ img {
     color: #000000;
 }
 
-.container:hover .content_mem:before {
-    content: ' ';
+.container:hover .mem_plus {
+    content: '';
+    margin-left: 600px;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 3rem;
+    right: 1rem;
     background-image: url('assets/img/icons/plus.png');
     background-size: contain;
 }
 
-.container:hover .content_input:checked~.content_mem:before {
-    content: ' ';
+.container:hover .content_input:checked~label .mem_plus {
+    content: '';
+    margin-left: 600px;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 3rem;
+    right: 1rem;
     background-image: url('assets/img/icons/close.png');
     background-size: contain;
 }
