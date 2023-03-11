@@ -91,7 +91,7 @@ img {
 
 
 .content_input:checked~.content_mem:before {
-    content: ' ';
+    content: '';
     display: block;
     width: 20px;
     height: 20px;
