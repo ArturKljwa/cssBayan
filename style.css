@@ -71,13 +71,12 @@ img {
 
 .content_input {
     cursor: pointer;
-    /* appearance: none; */
+    appearance: none;
 }
 
 .content_input:checked~.content_mem {
     color: black;
 }
-
 
 .content_input:checked~.content_img {
     width: 100%;
@@ -88,22 +87,15 @@ img {
 
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 822px) {
+@media (max-width: 811px) {
     html {
-        font-size: 5px;
+        font-size: 8px;
     }
 
-
-    .content__item:hover .content_img {}
+    .wrapper {
+        max-width: 810px;
+        padding: 0 13rem;
+    }
 
     .mem_plus {
         display: block;
@@ -125,7 +117,8 @@ img {
 
 }
 
-@media (min-width: 811px) {
+@media (min-width: 812px) {
+
 
 
     .content__item:hover .content_img {
@@ -157,5 +150,15 @@ img {
         height: 2rem;
         background-image: url('assets/img/icons/close.png');
         background-size: contain;
+    }
+}
+
+@media (max-width: 321px) {
+    html {
+        font-size: 6px;
+    }
+
+.wrapper {
+        padding: 0 9rem;
     }
 }
